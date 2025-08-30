@@ -4,7 +4,7 @@
 > 
 > **适用系统**: Windows 10/11 (64位)
 
-## 🚀 30分钟快速部署
+## 30分钟快速部署
 
 ### 第一阶段: 环境准备 (10分钟)
 
@@ -21,12 +21,12 @@ setup\install_dependencies.bat
 ```
 
 **自动安装内容**:
-- ✅ Chocolatey 包管理器
-- ✅ Git 版本控制工具  
-- ✅ Python 3.8+ 运行环境
-- ✅ Visual Studio Build Tools
-- ✅ .NET 6.0 Runtime
-- ✅ CMake 构建工具
+- Chocolatey 包管理器
+- Git 版本控制工具  
+- Python 3.8+ 运行环境
+- Visual Studio Build Tools
+- .NET 6.0 Runtime
+- CMake 构建工具
 
 #### 3. 手动安装UE5
 1. 打开 Epic Games Launcher (脚本会自动打开下载页面)
@@ -41,11 +41,11 @@ setup\build_project.bat
 ```
 
 **自动构建内容**:
-- 🔨 下载并编译 AirSim 库
-- 🏗️ 创建 UE5 项目文件
-- 🔧 安装 AirSim 插件
-- ⚙️ 生成 Visual Studio 项目
-- 📝 创建默认配置文件
+- 下载并编译 AirSim 库
+- 创建 UE5 项目文件
+- 安装 AirSim 插件
+- 生成 Visual Studio 项目
+- 创建默认配置文件
 
 #### 5. 配置Python环境
 ```batch
@@ -53,10 +53,10 @@ setup\setup_environment.bat
 ```
 
 **自动配置内容**:
-- 🐍 创建Python虚拟环境
-- 📦 安装所有依赖包
-- 🔗 安装AirSim Python API
-- ✅ 运行环境测试
+- 创建Python虚拟环境
+- 安装所有依赖包
+- 安装AirSim Python API
+- 运行环境测试
 
 ### 第三阶段: 验证测试 (5分钟)
 
@@ -76,7 +76,7 @@ python examples\complete_rov_demo.py --scenario basic_movement
 
 ---
 
-## 🎯 核心功能验证
+## 核心功能验证
 
 ### 基础功能测试
 
@@ -87,12 +87,12 @@ from src.python.rov_client import ROVController
 # 创建ROV控制器
 rov = ROVController()
 if rov.initialize():
-    print("✅ ROV系统连接成功")
+    print("ROV系统连接成功")
     
     # 获取当前状态
     state = rov.get_rov_state()
-    print(f"📍 位置: {state.position}")
-    print(f"🌊 深度: {state.depth}m")
+    print(f"位置: {state.position}")
+    print(f"深度: {state.depth}m")
 ```
 
 #### 2. 推进器控制测试
@@ -100,18 +100,18 @@ if rov.initialize():
 # 测试推进器PWM控制
 pwm_values = [0.5, 0.5, 0.5, 0.5, 0.6, 0.4, 0.6, 0.4]  # 前进
 success = rov.set_thruster_pwm(pwm_values, 3.0)
-print(f"推进器控制: {'✅ 成功' if success else '❌ 失败'}")
+print(f"推进器控制: {'成功' if success else '失败'}")
 ```
 
 #### 3. 传感器数据测试
 ```python
 # 获取相机图像
 rgb_image = rov.get_camera_image("front_center")
-print(f"RGB图像: {'✅ 获取成功' if rgb_image is not None else '❌ 获取失败'}")
+print(f"RGB图像: {'获取成功' if rgb_image is not None else '获取失败'}")
 
 # 获取IMU数据
 imu_data = rov.get_imu_data()
-print(f"IMU数据: {'✅ 获取成功' if imu_data else '❌ 获取失败'}")
+print(f"IMU数据: {'获取成功' if imu_data else '获取失败'}")
 ```
 
 ### 高级功能测试
@@ -138,9 +138,9 @@ python examples\complete_rov_demo.py --scenario complete_mission
 
 ---
 
-## 📋 功能清单验证
+## 功能清单验证
 
-### ✅ 必备功能检查表
+### 必备功能检查表
 
 - [ ] **ROV物理仿真**: BlueROV2 Heavy 8推进器模型
 - [ ] **水动力学模拟**: 阻力、浮力、流体动力学
@@ -153,7 +153,7 @@ python examples\complete_rov_demo.py --scenario complete_mission
 - [ ] **水下视觉渲染**: UE5 Water System
 - [ ] **完整Python API**: 全功能控制接口
 
-### 🎮 控制功能检查
+### 控制功能检查
 
 ```python
 # 运行完整功能检查
@@ -170,7 +170,7 @@ python examples\complete_rov_demo.py --scenario all
 
 ---
 
-## 🔧 故障排除
+## 故障排除
 
 ### 常见问题
 
@@ -241,7 +241,7 @@ type setup\environment_log.txt
 
 ---
 
-## 📚 进阶使用
+## 进阶使用
 
 ### 自定义开发
 
@@ -311,7 +311,7 @@ for i in range(10):
 
 ---
 
-## 🎯 性能基准
+## 性能基准
 
 ### 最小系统要求验证
 
@@ -360,18 +360,18 @@ print(f"平均控制延迟: {avg_latency*1000:.2f}ms")
 
 ---
 
-## 🎉 成功标准
+## 成功标准
 
 当你完成快速开始指南后，应该能够:
 
-1. ✅ **UE5仿真正常运行**: 看到水下环境和ROV模型
-2. ✅ **Python API连接成功**: 无连接错误
-3. ✅ **推进器控制响应**: ROV能够移动
-4. ✅ **传感器数据正常**: 能获取图像和IMU数据
-5. ✅ **轨迹跟踪工作**: ROV能跟踪预设路径
-6. ✅ **完整演示运行**: 所有6个演示场景正常执行
+1. **UE5仿真正常运行**: 看到水下环境和ROV模型
+2. **Python API连接成功**: 无连接错误
+3. **推进器控制响应**: ROV能够移动
+4. **传感器数据正常**: 能获取图像和IMU数据
+5. **轨迹跟踪工作**: ROV能跟踪预设路径
+6. **完整演示运行**: 所有6个演示场景正常执行
 
-**如果以上所有项目都通过，恭喜你！HAAV_Sim Windows最小实现部署成功！** 🎊
+**如果以上所有项目都通过，恭喜你！HAAV_Sim Windows最小实现部署成功！**
 
 ---
 

@@ -30,37 +30,37 @@ if not exist "%~dp0advanced_mission_demos.py" (
 
 echo [信息] 可用的高级任务演示:
 echo.
-echo   🔍 1. search_rescue         - 搜索救援任务
+echo    1. search_rescue         - 搜索救援任务
 echo      描述: ROV搜索指定区域内的目标物体
 echo      特点: 网格搜索模式, 目标识别, 详细检查
 echo      时长: 约15分钟
 echo.
-echo   🏗️ 2. underwater_inspection - 水下结构检查
+echo    2. underwater_inspection - 水下结构检查
 echo      描述: ROV检查水下结构的完整性和安全性  
 echo      特点: 多角度检查, 缺陷识别, 质量评估
 echo      时长: 约12分钟
 echo.
-echo   🧪 3. scientific_sampling   - 科学采样任务
+echo    3. scientific_sampling   - 科学采样任务
 echo      描述: ROV在指定位置采集水样和沉积物样本
 echo      特点: 精确定位, 样本采集, 环境记录
 echo      时长: 约10分钟
 echo.
-echo   🚰 4. pipeline_following    - 管道跟踪检查
+echo    4. pipeline_following    - 管道跟踪检查
 echo      描述: ROV跟踪管道路径并检查异常情况
 echo      特点: 路径跟踪, 异常检测, 连续监控
 echo      时长: 约8分钟
 echo.
-echo   🌊 5. environmental_monitoring - 环境监控任务
+echo    5. environmental_monitoring - 环境监控任务
 echo      描述: ROV监控水质参数和环境指标
 echo      特点: 多参数监测, 数据分析, 趋势评估
 echo      时长: 约10分钟
 echo.
-echo   👁️ 6. surveillance_patrol   - 监视巡逻任务
+echo    6. surveillance_patrol   - 监视巡逻任务
 echo      描述: ROV按预定路线进行安全巡逻监控
 echo      特点: 路线巡逻, 事件检测, 图像记录
 echo      时长: 约12分钟
 echo.
-echo   🎖️ 0. all                   - 运行所有任务演示
+echo    0. all                   - 运行所有任务演示
 echo      描述: 依次执行所有6种高级任务演示
 echo      时长: 约70分钟 (包含任务间隔)
 echo.
@@ -94,8 +94,8 @@ if "%mission_name%"=="search_rescue" (
     echo           搜索救援任务演示
     echo ===============================================
     echo.
-    echo 🎯 任务目标: 在指定水域搜索失踪人员或物体
-    echo 📋 执行步骤:
+    echo  任务目标: 在指定水域搜索失踪人员或物体
+    echo  执行步骤:
     echo    1. 根据搜索区域生成网格搜索模式
     echo    2. ROV按蛇形路径覆盖整个搜索区域
     echo    3. 在每个搜索点悬停并进行全方位扫描
@@ -103,7 +103,7 @@ if "%mission_name%"=="search_rescue" (
     echo    5. 对发现的目标进行详细多角度检查
     echo    6. 记录目标位置、特征和置信度
     echo.
-    echo 💡 技术亮点: 
+    echo  技术亮点: 
     echo    - 智能搜索路径规划
     echo    - 实时目标检测算法
     echo    - 自适应搜索策略
@@ -113,15 +113,15 @@ if "%mission_name%"=="search_rescue" (
     echo         水下结构检查任务演示
     echo ===============================================
     echo.
-    echo 🎯 任务目标: 检查水下建筑结构的完整性和安全状态
-    echo 📋 执行步骤:
+    echo  任务目标: 检查水下建筑结构的完整性和安全状态
+    echo  执行步骤:
     echo    1. 围绕检查对象规划多角度检查轨迹
     echo    2. 从不同角度对结构进行详细观测
     echo    3. 使用计算机视觉识别结构缺陷
     echo    4. 评估缺陷的严重程度和影响
     echo    5. 生成详细的检查报告
     echo.
-    echo 💡 技术亮点:
+    echo  技术亮点:
     echo    - 多角度检查策略
     echo    - 自动缺陷识别
     echo    - 质量评估算法
@@ -130,15 +130,15 @@ if "%mission_name%"=="search_rescue" (
     echo         科学采样任务演示
     echo ===============================================
     echo.
-    echo 🎯 任务目标: 在特定位置采集水样和沉积物用于科学研究
-    echo 📋 执行步骤:
+    echo  任务目标: 在特定位置采集水样和沉积物用于科学研究
+    echo  执行步骤:
     echo    1. 精确导航到采样位置
     echo    2. 稳定悬停并启动采样设备
     echo    3. 根据采样类型执行相应采样程序
     echo    4. 记录环境参数和采样条件
     echo    5. 评估样本质量和采样效果
     echo.
-    echo 💡 技术亮点:
+    echo  技术亮点:
     echo    - 精确位置控制
     echo    - 多类型采样支持
     echo    - 环境参数监控
@@ -147,8 +147,8 @@ if "%mission_name%"=="search_rescue" (
     echo         完整任务演示套件
     echo ===============================================
     echo.
-    echo 🎯 任务目标: 展示ROV在各种实际应用场景中的能力
-    echo 📋 执行计划:
+    echo  任务目标: 展示ROV在各种实际应用场景中的能力
+    echo  执行计划:
     echo    第1阶段: 搜索救援任务 (15分钟)
     echo    第2阶段: 水下结构检查 (12分钟) 
     echo    第3阶段: 科学采样任务 (10分钟)
@@ -156,8 +156,8 @@ if "%mission_name%"=="search_rescue" (
     echo    第5阶段: 环境监控任务 (10分钟)
     echo    第6阶段: 监视巡逻任务 (12分钟)
     echo.
-    echo ⏱️ 总预计时间: 约70分钟 (包含任务间隔)
-    echo 💡 建议: 确保有充足的时间完成所有演示
+    echo  总预计时间: 约70分钟 (包含任务间隔)
+    echo  建议: 确保有充足的时间完成所有演示
 )
 
 echo.
@@ -188,11 +188,11 @@ echo ===============================================
 echo.
 
 echo [提示] 任务演示特点:
-echo   - 🤖 完全自主执行，无需人工干预
-echo   - 📊 实时显示任务进度和状态
-echo   - 💾 自动保存任务数据和结果
-echo   - 🎥 记录关键操作和发现
-echo   - 📈 生成详细的任务报告
+echo   -  完全自主执行，无需人工干预
+echo   -  实时显示任务进度和状态
+echo   -  自动保存任务数据和结果
+echo   -  记录关键操作和发现
+echo   -  生成详细的任务报告
 echo.
 echo [注意事项]:
 echo   - 演示期间可以按 Ctrl+C 安全中断
@@ -223,11 +223,11 @@ if %EXIT_CODE% equ 0 (
     echo.
     
     echo [输出文件] 以下文件已生成:
-    echo   📊 任务数据文件:
+    echo    任务数据文件:
     for %%f in (*_mission_*.json) do (
         echo     - %%f
     )
-    echo   📷 图像文件:
+    echo    图像文件:
     for %%f in (target_*.png surveillance_*.png) do (
         echo     - %%f
     )

@@ -258,12 +258,12 @@ echo ===============================================
 echo              构建完成报告
 echo ===============================================
 echo.
-echo [✓] AirSim库编译完成
-echo [✓] UE5项目创建完成  
-echo [✓] AirSim插件安装完成
-echo [✓] Visual Studio项目生成完成
-echo [✓] 默认配置文件创建完成
-echo [✓] 项目启动脚本创建完成
+echo [] AirSim库编译完成
+echo [] UE5项目创建完成  
+echo [] AirSim插件安装完成
+echo [] Visual Studio项目生成完成
+echo [] 默认配置文件创建完成
+echo [] 项目启动脚本创建完成
 echo.
 echo [项目文件]
 echo   - UE5项目: %PROJECT_ROOT%\unreal\Underwater.uproject

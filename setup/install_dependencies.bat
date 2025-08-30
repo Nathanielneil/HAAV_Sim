@@ -211,13 +211,13 @@ echo ===============================================
 echo           安装完成报告
 echo ===============================================
 echo.
-echo [✓] Chocolatey包管理器
-echo [✓] Git版本控制工具
-echo [✓] Python 3.x 运行环境
-echo [✓] Visual Studio Build Tools
-echo [✓] .NET 6.0 Runtime
-echo [✓] CMake构建工具
-echo [✓] 基础Python包
+echo [] Chocolatey包管理器
+echo [] Git版本控制工具
+echo [] Python 3.x 运行环境
+echo [] Visual Studio Build Tools
+echo [] .NET 6.0 Runtime
+echo [] CMake构建工具
+echo [] 基础Python包
 echo.
 echo [下一步] 请完成以下手动步骤:
 echo   1. 在Epic Games Launcher中安装UE 5.1.1

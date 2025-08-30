@@ -176,10 +176,10 @@ echo def test_import^(module_name^):
 echo     try:
 echo         module = importlib.import_module^(module_name^)
 echo         version = getattr^(module, '__version__', 'Unknown'^)
-echo         print^(f"[✓] {module_name}: {version}"^)
+echo         print^(f"[] {module_name}: {version}"^)
 echo         return True
 echo     except ImportError as e:
-echo         print^(f"[✗] {module_name}: {e}"^)  
+echo         print^(f"[] {module_name}: {e}"^)  
 echo         return False
 echo.
 echo def main^(^):
@@ -199,10 +199,10 @@ echo
 echo     print^(f"\n测试结果: {success_count}/{len^(modules^)} 模块导入成功"^)
 echo     
 echo     if success_count == len^(modules^):
-echo         print^("🎉 环境配置完全正确!"^)
+echo         print^(" 环境配置完全正确!"^)
 echo         return True
 echo     else:
-echo         print^("⚠️ 部分模块导入失败，请检查安装"^)
+echo         print^(" 部分模块导入失败，请检查安装"^)
 echo         return False
 echo.
 echo if __name__ == "__main__":
@@ -272,19 +272,19 @@ echo            环境配置完成报告
 echo ===============================================
 echo.
 if %TEST_RESULT% equ 0 (
-    echo [✓] Python虚拟环境创建成功
-    echo [✓] 所有依赖包安装成功
-    echo [✓] AirSim包安装成功
-    echo [✓] 项目包安装成功
-    echo [✓] 环境测试通过
+    echo [] Python虚拟环境创建成功
+    echo [] 所有依赖包安装成功
+    echo [] AirSim包安装成功
+    echo [] 项目包安装成功
+    echo [] 环境测试通过
     echo.
-    echo [🎉] 环境配置完全成功！
+    echo [] 环境配置完全成功！
 ) else (
-    echo [✓] Python虚拟环境创建成功
-    echo [⚠] 部分依赖包可能安装失败
-    echo [⚠] 环境测试未完全通过
+    echo [] Python虚拟环境创建成功
+    echo [] 部分依赖包可能安装失败
+    echo [] 环境测试未完全通过
     echo.
-    echo [⚠️] 环境配置部分成功，请检查错误日志
+    echo [] 环境配置部分成功，请检查错误日志
 )
 echo.
 echo [环境信息]
